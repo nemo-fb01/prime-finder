@@ -1,0 +1,13 @@
+spin_manifest_version = 2
+[application]
+name = "my-app"
+version = "0.1.0"
+
+[[trigger.http]]
+route = "/..."
+component = "hello"
+
+[component.hello]
+source = "app.wasm"
+[component.hello.build]
+command = "componentize-py -w spin-http componentize main -o app.wasm"
