@@ -1,0 +1,4 @@
+kind: wasmer.io/App.v0
+name: your-username/prime-web-app # Thay bằng username của bạn
+package: python/flask
+entrypoint: main.py
